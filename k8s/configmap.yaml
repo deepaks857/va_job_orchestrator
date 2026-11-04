@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: va-config
+  namespace: va-job-orchestrator
+data:
+  MONGODB_URI: "mongodb://mongodb:27017"
+  MONGODB_DB: "va_jobs"
+  REDIS_URI: "redis://redis:6379/0"

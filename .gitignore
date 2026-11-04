@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+venv/
+.venv/
+*.tmp
+*.temp
+downloads/
+__pycache__/
+session-ses_128d.md
+video_serve.temp/
