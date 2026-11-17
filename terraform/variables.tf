@@ -25,13 +25,13 @@ variable "worker_replicas" {
 variable "api_image" {
   description = "API Docker image"
   type        = string
-  default     = "va-job-orchestrator-api:latest"
+  default     = "mycompany/va-job-orchestrator-api:latest"
 }
 
 variable "worker_image" {
   description = "Worker Docker image"
   type        = string
-  default     = "va-job-orchestrator-worker:latest"
+  default     = "mycompany/va-job-orchestrator-worker:latest"
 }
 
 variable "minikube_cpus" {

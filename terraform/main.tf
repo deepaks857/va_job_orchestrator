@@ -1,7 +1,7 @@
 resource "null_resource" "ensure_minikube" {
   provisioner "local-exec" {
     command = "minikube status || minikube start --cpus=${var.minikube_cpus} --memory=${var.minikube_memory}mb"
-    interpreter = ["powershell", "-Command"]
+    # interpreter = ["powershell", "-Command"]
   }
 }
 

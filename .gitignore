@@ -10,3 +10,7 @@ downloads/
 __pycache__/
 session-ses_128d.md
 video_serve.temp/
+terraform/.terraform
+terraform/*.tfstate
+terraform/*.backup
+terraform/.terraform.lock.hcl

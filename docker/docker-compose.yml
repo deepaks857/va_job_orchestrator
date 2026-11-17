@@ -3,6 +3,7 @@ services:
     build:
       context: ..
       dockerfile: docker/Dockerfile.api
+    image: mycompany/va-job-orchestrator-api:latest
     ports:
       - "8000:8000"
     environment:
@@ -19,6 +20,7 @@ services:
     build:
       context: ..
       dockerfile: docker/Dockerfile.worker
+    image: mycompany/va-job-orchestrator-worker:latest
     environment:
       - MONGODB_URI=mongodb://mongo:27017
       - MONGODB_DB=va_jobs
